@@ -1,0 +1,38 @@
+[
+  {
+    "model": "dogs.category",
+    "pk": 1,
+    "fields": {
+      "name": "�����������",
+      "description": "��������"
+    }
+  },
+  {
+    "model": "dogs.category",
+    "pk": 2,
+    "fields": {
+      "name": "�����",
+      "description": "�����"
+    }
+  },
+  {
+    "model": "dogs.dog",
+    "pk": 1,
+    "fields": {
+      "name": "����",
+      "category": 1,
+      "photo": "",
+      "birth_day": null
+    }
+  },
+  {
+    "model": "dogs.dog",
+    "pk": 2,
+    "fields": {
+      "name": "�������",
+      "category": 2,
+      "photo": "",
+      "birth_day": null
+    }
+  }
+]
