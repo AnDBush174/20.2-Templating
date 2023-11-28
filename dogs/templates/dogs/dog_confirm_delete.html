@@ -1,0 +1,22 @@
+{% extends 'dogs/base.html' %}
+
+{% block content %}
+<from method="post" class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header">
+                Удаление собаки
+            </div>
+            <div class="card-body">
+                {% csrf_token %}
+                <p>Хотите удалить собаку {{ object.name }}</p>
+                <bottom type="submit" class="btn btn-outline-danger">
+                    Удалить
+                </bottom>
+                <a class="btn btn-outline-warning" href="{% url 'dogs:category' object.category.pk %}">отмена</a>
+            </div>
+        </div>
+    </div>
+
+</from>
+{% endblock %}
